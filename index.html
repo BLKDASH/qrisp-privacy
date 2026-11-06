@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QRisp 隐私政策</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.75 system-ui, "Microsoft YaHei", sans-serif; color: #12284a; background: #f4f8ff; }
+    body { margin: 0; padding: clamp(20px, 6vw, 64px) 16px; }
+    main { max-width: 680px; margin: auto; padding: clamp(22px, 5vw, 48px); border: 1px solid #dbe7f9; border-radius: 20px; background: #fff; }
+    h1 { margin: 0; font-size: clamp(28px, 5vw, 38px); line-height: 1.3; }
+    h2 { margin: 1.5em 0 .35em; font-size: 1.15rem; }
+    p { margin: 0 0 .8em; }
+    ul { margin: .4em 0 .8em; padding-inline-start: 1.4em; }
+    li + li { margin-top: .35em; }
+    .updated { margin: .5em 0 1.5em; color: #435d7b; font-size: .9rem; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>QRisp 隐私政策</h1>
+    <p class="updated">更新于 <time datetime="2026-11-06">2026 年 11 月 6 日</time></p>
+    <p>QRisp 是一款离线二维码生成扩展。本政策说明 QRisp 1.0.0 如何处理网页信息和用户输入。</p>
+
+    <h2>处理的信息与用途</h2>
+    <ul>
+      <li>打开 QRisp 弹窗时，扩展通过 <code>activeTab</code> 读取当前标签页的标题和网址。标题和网址显示在弹窗中，网址用于生成二维码或复制链接。</li>
+      <li>在「自定义内容」中输入的网址或文字，用于在本机生成并预览二维码。</li>
+      <li>点击复制时，扩展通过 <code>clipboardWrite</code> 把当前网址或 PNG 二维码图片写入系统剪贴板。点击下载时，浏览器会保存你选择的图片格式。</li>
+    </ul>
+
+    <h2>保存与分享</h2>
+    <p>QRisp 仅在弹窗打开时临时处理上述信息。关闭弹窗后，扩展不会保留这些内容。你主动复制或下载的内容由系统剪贴板或下载位置保留，可以自行清除或删除。</p>
+    <p>QRisp 不会将数据传给开发者、服务器或第三方，也不会在后台记录浏览活动。扩展无需账号，不包含分析或广告，不出售用户数据。你主动分享的二维码会包含生成它时使用的网址或文字。</p>
+
+    <h2>Chrome 网上应用店政策</h2>
+    <p>QRisp 对从 Chrome API 获取的信息的使用遵守 <a href="https://developer.chrome.com/docs/webstore/program-policies/policies#protecting-user-privacy">Chrome 网上应用店用户数据政策</a>，包括有限使用要求。</p>
+
+    <h2>联系</h2>
+    <p>如有隐私问题，可通过 QRisp 在 Chrome 网上应用店的商品支持入口联系开发者。</p>
+  </main>
+</body>
+</html>
